@@ -1,0 +1,12 @@
+/** sk-helper.scss
+    Contains helper functions for components and their usage
+    -- Developed and Maintained by 
+    Sukor Consulting **/ 
+
+
+/*Usage
+    <div class='%currency%'><span class="price">45</span>
+     */
+.price {
+    @extend %currency;
+}

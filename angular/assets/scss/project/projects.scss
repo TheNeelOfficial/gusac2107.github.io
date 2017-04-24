@@ -1,0 +1,301 @@
+.categories {
+	min-height: 100vh;
+	background: url(images/bg.jpg) center center / cover no-repeat;
+	padding: 15px 15px 50px 15px;
+	.category-list-container {
+		position: relative;
+		.category-list {
+			padding: 30px;
+			border: 1px solid #c4c4c4;
+			&.vertical-middle {
+				position: absolute;
+			    top: 50%;
+			    left: 0px;
+			    right: 0px;
+			    transform: translateY(50%);
+		    }
+			.category-container {
+				height: 200px;
+				float: left;
+				padding-bottom: 30px;
+				.category-image {
+					width: 100%;
+					height: 100%;
+					background-size: cover;
+					background-repeat: no-repeat;
+					box-shadow: rgba(0, 0, 0, 0.2) 20px 20px 16px 0px;
+					position: relative;
+					cursor: pointer;
+					&:hover {
+						border: 2px solid #fff;
+					}
+					.category-name {
+						position: absolute;
+						top: 50px;
+						left: 25px;
+						right: 25px;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}
+
+@keyframes move-div {
+    from { left: 150%; background-color: none;}
+    to { left: 0px; background-color: rgba(255, 255, 255, 0.2);}
+}
+
+@keyframes text-appear {
+    from { right: 235px; }
+    to { right: 15px }
+}
+
+.projects {
+	min-height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-transition: background-image 0.4s ease-in-out;
+	-moz-transition: background-image 0.4s ease-in-out;
+	transition: background-image 0.4s ease-in-out;
+	position: relative;
+	.project-name {
+		position: absolute;
+		top: 100px;
+		left: 50px;
+		background-color: rgba(255, 255, 255, 0.2);
+		height: 50px;
+		min-width: 200px;
+		color: #fff;
+		padding: 0px 15px;
+		p {
+			line-height: 50px;
+			text-transform: uppercase;
+		}
+		span {
+		    height: 3px;
+		    background: #fff;
+		    display: block;
+		    position: absolute;
+		    bottom: 0px;
+		    left: 15px;
+		    right: 15px;
+		}
+	}
+	.project-desc-container {
+		position: absolute;
+		top: 175px;
+		left: 50px;
+		width: 250px;
+		.project-desc {
+			visibility: hidden;
+			color: #fff;
+			position: relative;
+		    width: 250px;
+		    overflow: hidden;
+		    .top-right, .bottom-left {
+			    box-sizing: inherit;
+			    position: absolute;
+			    border: 2px solid transparent;
+			    width: 0;
+			    height: 0;
+			}
+			.top-right {
+			    top: 0;
+			    left: 0;
+			}
+			.bottom-left {
+				bottom: 0;
+				right: 0;
+			}
+		    &.animatedesc {
+		    	-webkit-animation: move-div 5s forwards;
+			    -moz-animation: move-div 5s forwards;
+			    animation: move-div 5s forwards;
+			    .top-right,
+				.bottom-left {
+				    width: 100%;
+				    height: 100%;
+				}
+				.top-right {
+				    -webkit-transition:
+						width 1s ease-out, // Width expands first
+				      	height 1s ease-out 1s; // And then height
+					-moz-transition:
+						width 1s ease-out, // Width expands first
+				      	height 1s ease-out 1s; // And then height
+				    transition:
+				    	width 1s ease-out, // Width expands first
+				      	height 1s ease-out 1s; // And then height
+				    border-top-color: #fff; // Make borders visible
+				    border-right-color: #fff;
+				}
+				.bottom-left {
+					-webkit-transition:
+						border-color 0s ease-out 2s, // Wait for ::before to finish before showing border
+				      	width 1s ease-out 2s, // And then exanding width
+				      	height 1s ease-out 3s; // And finally height
+					-moz-transition:
+						border-color 0s ease-out 2s, // Wait for ::before to finish before showing border
+				      	width 1s ease-out 2s, // And then exanding width
+				      	height 1s ease-out 3s; // And finally height
+					transition:
+				      	border-color 0s ease-out 2s, // Wait for ::before to finish before showing border
+				      	width 1s ease-out 2s, // And then exanding width
+				      	height 1s ease-out 3s; // And finally height
+				    border-bottom-color: #fff; // Make borders visible
+				    border-left-color: #fff;
+				}
+		    }
+		    p {
+		    	height: 100%;
+		    	line-height: 30px;
+		    	text-transform: uppercase;
+		    	padding: 15px;
+		    	-webkit-transition: text-appear 1s ease-in-out;
+				-moz-transition: text-appear 1s ease-in-out;
+				transition: text-appear 1s ease-in-out;
+			}
+		    span {
+			    height: 3px;
+			    background: #fff;
+			    display: block;
+			    position: absolute;
+			    bottom: 0px;
+			    left: 15px;
+			    right: 15px;
+			}
+		}
+		.project-image-navigation {
+			position: absolute;
+		    width: 35px;
+		    left: 0px;
+		    right: 0px;
+		    margin: 0px auto;
+		    margin-top: 10px;
+		    background-color: rgba(255, 255, 255, 0.2);
+		    padding: 0px 5px;
+			.left-arrow {
+				float: left;
+			    height: 20px;
+			    line-height: 20px;
+			    color: #fff;
+			    cursor: pointer;
+			    margin-right: 10px;
+			}
+			.right-arrow {
+				float: right;
+			    height: 20px;
+			    line-height: 20px;
+			    color: #fff;
+			    cursor: pointer;
+			}
+		}
+	}
+	.project-carousel {
+		position: absolute;
+	    bottom: 10px;
+	    width: 90%;
+	    height: 55px;
+	    left: 0;
+	    right: 0;
+	    margin: 0 auto;
+	    @include device('desktop'){
+	    	bottom: 100px;
+		    width: 50%;
+	    }
+	    .gridview {
+			border: 1px solid #c4c4c4;
+			padding: 20px 15px;
+			position: relative;
+			width: 55px;
+			height: 55px;
+			margin-right: 10px;
+			float: left;
+			cursor: pointer;
+			.left-top {
+				position: absolute;
+				top: 20px;
+				left: 15px;
+				width: 10px;
+				height: 5px;
+				background: #fff;
+			}
+			.right-top {
+				position: absolute;
+				top: 20px;
+				right: 15px;
+				width: 10px;
+				height: 5px;
+				background: #fff;
+			}
+			.left-bottom {
+				position: absolute;
+				bottom: 20px;
+				left: 15px;
+				width: 10px;
+				height: 5px;
+				background: #fff;
+			}
+			.right-bottom {
+				position: absolute;
+				bottom: 20px;
+				right: 15px;
+				width: 10px;
+				height: 5px;
+				background: #fff;
+			}
+		}
+		.project-carousel-list {
+			overflow: hidden;
+			position: absolute;
+		    left: 65px;
+		    right: 0px;
+		    height: 55px;
+			ul {
+				display: flex;
+				li {
+					cursor: pointer;
+					float: left;
+					position: absolute;
+					transition: left 0.5s linear;
+					.project-bar {
+						width: 50px;
+						height: 1px;
+						display: block;
+						margin: 27px 2px;
+						background: #fff;
+						opacity: 0.25;
+					}
+					.project-dot {
+						position: absolute;
+						top: 10px;
+						left: 0px;
+						right: 0px;
+						margin: 0px auto;
+						width: 6px;
+						height: 6px;
+						border-radius: 3px;
+						background: #fff;
+						opacity: 0.25;
+					}
+					&.active {
+						cursor: default;
+						.project-bar {
+							opacity: 1;
+						}
+						.project-dot {
+							opacity: 1;
+						}
+					}
+					&:hover {
+						.project-dot {
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+	}
+}

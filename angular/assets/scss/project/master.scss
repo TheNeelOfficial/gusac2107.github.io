@@ -1,0 +1,35 @@
+/** master.scss
+    Master scss for projects
+    -- Developed and Maintained by
+    Sukor Consulting **/
+
+
+@import "../imports";
+@import "config";
+@import "fonts";
+@import "header";
+@import "footer";
+@import "home";
+@import "projects";
+
+html {
+	height: 100%;
+}
+
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.seravekLight{font-family: seravekLight !important;}
+.seravekMed{font-family: seravekMed !important;}
+.soria{font-family: soria !important;}
+
+
+.page-container {
+  min-height:100%;
+  position:relative;
+  .content {
+  	
+  }
+}

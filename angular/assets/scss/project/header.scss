@@ -1,0 +1,68 @@
+header {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 10;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	@include device('tablet'){
+		padding-top: 50px;
+	}
+	background: $background-color;
+}
+
+
+
+.nav-toggle-button {
+	position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+    .navbar-toggle {
+    	display: block;
+    	color: #fff;
+    	width: 44px;
+    	height: 34px;
+    	.icon-bar {
+    		background-color: #fff;
+    	}
+    }
+}
+
+nav {
+	position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 250px;
+    background: black;
+    opacity: 0;
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+  	-webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    font-family: spaceAge;
+    &.active {
+    	opacity: 0.6;
+    	display: block;
+    }
+    .nav-menu {
+    	position: absolute;
+    	top: 125px;
+    	bottom: 0px;
+    	left: 0px;
+    	right: 0px;
+    	li {
+    		padding: 30px 15px;
+    		font-size: 22px;
+    		a {
+    			color: #fff;
+    			text-transform: uppercase;
+    			&:hover {
+    				color: #fff;
+    			}
+    		}
+    	}
+    }
+}

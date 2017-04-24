@@ -1,0 +1,30 @@
+/** forms.scss
+    Contains commonly used mixins for forms  
+    -- Developed and Maintained by 
+    Sukor Consulting **/ 
+
+@import "../mixins/helpers";
+
+
+@mixin jointform($border-color:#ddd,$input-height: 40px,$font-size: 16px) {
+	border: 1px solid $border-color;
+	.form-group{
+		margin-bottom:0px;
+	}
+	input{
+		border: none;
+		border-bottom: $border-color;
+		font-size: $font-size;
+		height: $input-height;
+	}
+	.right-border{
+		border-right: 1px solid $border-color;
+	}
+
+}
+
+@mixin disjointform{
+	
+}
+
+

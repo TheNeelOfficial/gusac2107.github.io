@@ -1,0 +1,21 @@
+/** cards.scss
+    Contains commonly used mixins for cards  
+    -- Developed and Maintained by 
+    Sukor Consulting **/ 
+
+
+@mixin reviewcard($max-width:32rem, $min-width:26rem, $background-color: #eee) {
+  float: left;
+  border-radius: 2px;
+//  border: 1px solid;
+//  border-color: rgba(0, 0, 0, .075);
+  box-shadow: rgba(43, 44, 48, .2) 2px 2px 7px;
+  max-width: $max-width;
+  min-width: $min-width;
+  min-height: 13rem;
+  margin: 20px;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  background-color: $background-color;
+}
+ 

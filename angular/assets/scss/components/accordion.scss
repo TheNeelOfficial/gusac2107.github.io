@@ -1,0 +1,94 @@
+@import "../mixins/helpers";
+
+/// ------------------------
+///   Customization Options 
+/// ------------------------
+
+$accordion-sub-menu: (
+    background: #444359,
+    color:  #d9d9d9,
+    hover_background: #b63b4d,
+    hover_color: #FFF,
+ 	  border_color: #4b4a5e
+);
+
+$accordion-menu: (
+   active_link_color: #b63b4d,
+);
+
+/// ------------------------
+///   SASS 
+/// ------------------------
+
+
+.accordion {
+  width: 100%;
+  max-width: 360px;
+  margin: 30px auto 20px;
+  background: #FFF;
+  @include prefix(border-radius, 4px, 'webkit' 'moz');
+  .link {
+    cursor: pointer;
+    display: block;
+    padding: 15px 15px 15px 42px;
+    color: #4D4D4D;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid #CCC;
+    position: relative;
+    @include prefix(transition, all 0.4s ease, 'webkit' 'moz');
+  }
+  li {
+    &:last-child .link {
+      border-bottom: 0;
+    }
+    i {
+      position: absolute;
+      top: 16px;
+      left: 12px;
+      font-size: 18px;
+      color: #595959;
+      @include prefix(transition, all 0.4s ease, 'webkit' 'moz');
+      &.fa-chevron-down {
+        right: 12px;
+        left: auto;
+        font-size: 16px;
+      }
+    }
+    &.open {
+      .link {
+        color: map-get($accordion-menu, active_link_color);
+      }
+      i {
+        color: map-get($accordion-menu, active_link_color);
+        &.fa-chevron-down {
+          @include prefix(transform, rotate(180deg) , 'webkit' 'moz' 'o');
+        }
+      }
+    }
+    &.default .submenu {
+      display: block;
+    }
+  }
+  .submenu {
+    display: none;
+    background: map-get($accordion-sub-menu, background);
+    font-size: 14px;
+    li {
+      border-bottom: 1px solid map-get($accordion-sub-menu,border_color);
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      color: map-get($accordion-sub-menu, color);;
+      padding: 12px;
+      padding-left: 42px;
+      @include prefix(transition, all 0.25s ease, 'webkit' 'moz' 'o');
+      &:hover {
+        background: map-get($accordion-sub-menu, hover_background);;
+        color: map-get($accordion-sub-menu, hover_color);;
+      }
+    }
+  }
+}
+

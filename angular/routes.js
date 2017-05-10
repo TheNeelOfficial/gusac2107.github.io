@@ -3,7 +3,8 @@ angular
         'ui.router',
         'ui.bootstrap',
         'ngSanitize',
-        'ngCookies'
+        'ngCookies',
+        'ngMap'
     ])
     .config(['$locationProvider', '$stateProvider', '$urlRouterProvider',
         function($locationProvider, $stateProvider, $urlRouterProvider) {
@@ -26,6 +27,15 @@ angular
                     '': {
                         templateUrl: "templates/projects.html",
                         controller: "projectsCtrl"
+                    }
+                }
+            })
+            .state('contactus', {
+                url: "/contactus",
+                views: {
+                    '': {
+                        templateUrl: "templates/contactus.html",
+                        controller: "contactusCtrl"
                     }
                 }
             })

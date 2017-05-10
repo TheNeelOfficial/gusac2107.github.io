@@ -8,7 +8,7 @@
 $breakpoints: (
   'mobile'     : (min-width: 320px),
   'phablet'    : (min-width: 480px),
-  'tablet'     : (min-width: 767px ),
+  'tablet'     : (min-width: 768px ),
   'laptop'     : (min-width: 992px ),
   'desktop'    : (min-width: 1200px ),
   'largescreen': (min-width: 2000px)
@@ -26,6 +26,7 @@ $text-color: #4A4A4A;
 $subtext-color: #9B9B9B;
 $btn-color: #5FB200;
 $btn-text-color: #FFF;
+$black : #333;
 
 
 ///Fonts

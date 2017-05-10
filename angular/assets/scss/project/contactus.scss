@@ -1,0 +1,93 @@
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}  
+}
+
+.contactus {
+	min-height: 100vh;
+	background: url(images/bg.jpg) center center / cover no-repeat;
+	.main-container {
+		padding-top: 80px;
+		padding-bottom: 40px;
+		@include device('tablet'){
+			height: 75vh;
+		}
+		.heading-container {
+			h2 {
+				font-size: 28px;
+			    font-weight: bold;
+			    font-style: italic;
+			}
+			p {
+				padding: 15px 0px;
+			    border-bottom: 1px solid $black;
+			    border-top: 1px solid $black;
+			    margin-top: 20px;
+			}
+		}
+		.info-container {
+			line-height: 1.5;
+			h2 {
+				font-weight: bold;
+			}
+		}
+		.form-container {
+			margin-top: 30px;
+			@include device('tablet'){
+				padding-left: 80px;
+				margin-top: 0px;
+			}
+			h2 {
+				font-size: 28px;
+			    font-weight: bold;
+			    font-style: italic;
+			}
+			.form {
+				margin-top: 40px;
+				.form-group {
+					margin-bottom: 25px;
+					label {
+					    font-size: 12px;
+					    letter-spacing: 1px;
+					    font-weight: bold;
+					    margin-bottom: 5px;
+					}
+					.form-control {
+						resize: none;
+					    background: none;
+					    border: 0px;
+					    box-shadow: none;
+					    border-bottom: 1px solid #808080;
+					    border-radius: 0px;
+					    color: $black;
+					    padding: 6px 0px;
+					    &:focus {
+					    	border-bottom: 1px solid $black;
+					    }
+					    @include placeholder {
+						    color:#808080;
+						}
+					}
+					.submit-btn {
+						background: $black;
+					    color: $btn-text-color;
+					    border-radius: 25px;
+					    letter-spacing: 1px;
+					    padding: 10px 25px;
+					    border: 0px;
+					    box-shadow: none;
+					    outline: none;
+					}
+				}
+			}
+		}
+	}
+	.map-container {
+		height: 25vh;
+		#map {
+			height: 25vh;
+		}
+	}
+}

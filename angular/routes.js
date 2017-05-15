@@ -4,7 +4,8 @@ angular
         'ui.bootstrap',
         'ngSanitize',
         'ngCookies',
-        'ngMap'
+        'ngMap',
+        'slick'
     ])
     .config(['$locationProvider', '$stateProvider', '$urlRouterProvider',
         function($locationProvider, $stateProvider, $urlRouterProvider) {

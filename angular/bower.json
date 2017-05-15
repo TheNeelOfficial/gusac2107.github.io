@@ -13,7 +13,8 @@
     "angular-bootstrap": "~0.13.2",
     "sweetalert": "~1.1.0",
     "letteringjs": "^0.7.0",
-    "ngmap": "^1.18.4"
+    "ngmap": "^1.18.4",
+    "angular-slick": "^0.2.1"
   },
   "private": true
 }

@@ -20,6 +20,8 @@ html {
 body {
   height: 100%;
   overflow-x: hidden;
+  background: $background-color;
+  color: $text-color;
 }
 
 .seravekLight{font-family: seravekLight !important;}
@@ -32,5 +34,28 @@ body {
   position:relative;
   .content {
   	
+  }
+}
+
+.btn {
+  background: $btn-color !important;
+  color: $btn-text-color !important;
+  border-radius: 0px !important;
+  &:hover{
+    //background: $btn-text-color !important;
+    //color: $text-color !important;
+  }
+  &:focus {
+    outline: none !important;
+    //background: $btn-text-color !important;
+    //color: $text-color !important;
+  }
+  &:active {
+    box-shadow: none !important;
+    //background: $btn-text-color !important;
+    //color: $text-color !important;
+  }
+  &[disabled] {
+    opacity: 1 !important;
   }
 }

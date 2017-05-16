@@ -33,7 +33,7 @@
                 </button>
             </div>
             <div class="logo">
-                <img src="assets/images/logo.png">
+                <p>PARADOX</p>
             </div>
             <ul class="nav-menu">
                 <li>
@@ -48,13 +48,7 @@
                 <li>
                     <a ui-sref="projects">Our Projects</a>
                 </li>
-                <li>
-                    <a ui-sref="contactus">Contact Us</a>
-                </li>
             </ul>
-            <div class="enquiry-box">
-
-            </div>
             <div class="social-box">
                 <ul>
                     <li>
@@ -67,6 +61,27 @@
                         <a><i class="fa fa-instagram" aria-hidden="true"></i></a>
                     </li>
                 </ul>
+            </div>
+            <div class="enquiry-box" ng-if="menuActive">
+                <div class="title" ui-sref="contactus">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    MAKE AN ENQUIRY   
+                </div>
+                <div class="body">
+                    <p>+91 9383838383</p>
+                    <p>care@paradox.in</p>
+                    <p>
+                        27 Colmore Row<br>
+                        Birmingham<br>
+                        England<br>
+                        B3 2EW<br>
+                    </p>
+                </div>
+            </div>
+            <div class="enquiry-box" ng-if="!menuActive">
+                <div class="title" ui-sref="contactus">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>   
+                </div>
             </div>
         </nav>
     

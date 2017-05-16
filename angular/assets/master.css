@@ -2170,49 +2170,66 @@ stretchRight
   font-family: spaceAge;
   src: url("fonts/space age.ttf"); }
 
-.nav-toggle-button {
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  z-index: 1; }
-  .nav-toggle-button .navbar-toggle {
-    display: block;
-    color: #fff;
-    width: 44px;
-    height: 34px; }
-    .nav-toggle-button .navbar-toggle .icon-bar {
-      background-color: #fff; }
-
 nav {
   position: fixed;
   top: 0px;
   bottom: 0px;
   right: 0px;
-  width: 250px;
+  width: 60px;
+  z-index: 3;
   background: black;
-  opacity: 0;
-  display: none;
-  transition: opacity 0.5s ease-in-out;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-  font-family: spaceAge; }
+  transition: width 0.5s linear;
+  -webkit-transition: width 0.5s linear;
+  -moz-transition: width 0.5s linear; }
   nav.active {
-    opacity: 0.6;
-    display: block; }
+    width: 250px; }
+    nav.active .nav-menu {
+      display: block; }
+    nav.active .logo {
+      display: block; }
+    nav.active .social-box ul li {
+      float: left;
+      margin-right: 15px; }
+      nav.active .social-box ul li:last-child {
+        margin-right: 0px; }
+  nav .nav-toggle-button .navbar-toggle {
+    display: block;
+    color: #fff;
+    margin: 0px;
+    padding: 15px;
+    float: left;
+    width: 60px;
+    text-align: -webkit-center; }
+    nav .nav-toggle-button .navbar-toggle .icon-bar {
+      background-color: #fff; }
+  nav .logo {
+    display: none;
+    padding: 15px;
+    width: 75%; }
+    nav .logo img {
+      max-width: 100%; }
   nav .nav-menu {
-    position: absolute;
-    top: 125px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px; }
+    display: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0px 15px; }
     nav .nav-menu li {
-      padding: 30px 15px;
-      font-size: 22px; }
+      padding: 15px 0px; }
       nav .nav-menu li a {
         color: #fff;
         text-transform: uppercase; }
         nav .nav-menu li a:hover {
           color: #fff; }
+  nav .social-box {
+    padding: 0px 15px;
+    text-align: center;
+    position: absolute;
+    bottom: 50px; }
+    nav .social-box ul li {
+      width: 30px;
+      padding: 15px 0px; }
+      nav .social-box ul li a {
+        color: #fff; }
 
 .home {
   height: 100vh; }
@@ -2232,7 +2249,9 @@ nav {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      width: 50%; }
+      width: 50%;
+      left: 50px;
+      right: 50px; }
       .home .outer-text-container .text-container p {
         font-weight: bold;
         font-size: 48px;
@@ -2244,15 +2263,25 @@ nav {
         text-transform: uppercase;
         padding: 6px 15px; }
   .home .slick-container {
-    height: 100vh;
-    z-index: 1; }
+    height: 100vh; }
+    .home .slick-container.slick-slider {
+      margin-bottom: 0px; }
     .home .slick-container .slick-item {
       height: 100vh;
-      background-size: cover;
-      background-repeat: no-repeat; }
+      z-index: 1;
+      position: relative; }
       .home .slick-container .slick-item .slick-item-container {
-        position: relative;
-        height: 100vh; }
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat; }
+      .home .slick-container .slick-item .overlay {
+        background: #333;
+        opacity: 0.5;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px; }
     .home .slick-container .slick-dots {
       position: absolute;
       bottom: 80px;
@@ -2260,7 +2289,8 @@ nav {
       right: 0;
       padding: 0;
       margin: 0;
-      text-align: center; }
+      text-align: center;
+      z-index: 2; }
       .home .slick-container .slick-dots li {
         display: inline-block;
         vertical-align: top;
@@ -2283,6 +2313,12 @@ nav {
           outline: none; }
         .home .slick-container .slick-dots li.slick-active button {
           background: #2895F1; }
+    .home .slick-container .slick-prev {
+      left: 15px;
+      z-index: 2; }
+    .home .slick-container .slick-next {
+      right: 15px;
+      z-index: 2; }
 
 .categories {
   min-height: 100vh;
@@ -2627,6 +2663,9 @@ body {
 .page-container {
   min-height: 100%;
   position: relative; }
+  .page-container .content {
+    margin-right: 60px;
+    position: relative; }
 
 .btn {
   background: #333 !important;

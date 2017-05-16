@@ -2,50 +2,66 @@ header {
     
 }
 
-
-
-.nav-toggle-button {
-	position: fixed;
-    top: 0px;
-    right: 0px;
-    z-index: 1;
-    .navbar-toggle {
-    	display: block;
-    	color: #fff;
-    	width: 44px;
-    	height: 34px;
-    	.icon-bar {
-    		background-color: #fff;
-    	}
-    }
-}
-
 nav {
 	position: fixed;
     top: 0px;
     bottom: 0px;
     right: 0px;
-    width: 250px;
+    width: 60px;
+    z-index: 3;
     background: black;
-    opacity: 0;
-    display: none;
-    transition: opacity 0.5s ease-in-out;
-  	-webkit-transition: opacity 0.5s ease-in-out;
-    -moz-transition: opacity 0.5s ease-in-out;
-    font-family: spaceAge;
+    transition: width 0.5s linear;
+  	-webkit-transition: width 0.5s linear;
+    -moz-transition: width 0.5s linear;
     &.active {
-    	opacity: 0.6;
-    	display: block;
+        width: 250px;
+        .nav-menu {
+            display: block;
+        }
+        .logo {
+            display: block;
+        }
+        .social-box {
+            ul {
+                li {
+                    float: left;
+                    margin-right: 15px;
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+    .nav-toggle-button {
+        .navbar-toggle {
+            display: block;
+            color: #fff;
+            margin: 0px;
+            padding: 15px;
+            float: left;
+            width: 60px;
+            text-align: -webkit-center;
+            .icon-bar {
+                background-color: #fff;
+            }
+        }
+    }
+    .logo {
+        display: none;
+        padding: 15px;
+        width: 75%;
+        img {
+            max-width: 100%;
+        }
     }
     .nav-menu {
-    	position: absolute;
-    	top: 125px;
-    	bottom: 0px;
-    	left: 0px;
-    	right: 0px;
+        display: none;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 0px 15px;
     	li {
-    		padding: 30px 15px;
-    		font-size: 22px;
+    		padding: 15px 0px;
     		a {
     			color: #fff;
     			text-transform: uppercase;
@@ -54,5 +70,23 @@ nav {
     			}
     		}
     	}
+    }
+    .enquiry-box {
+        //padding: 0px 15px;
+    }
+    .social-box {
+        padding: 0px 15px;
+        text-align: center;
+        position: absolute;
+        bottom: 50px;
+        ul {
+            li {
+                width: 30px;
+                padding: 15px 0px;
+                a {
+                    color: #fff;
+                }
+            }
+        }
     }
 }

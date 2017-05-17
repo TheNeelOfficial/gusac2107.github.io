@@ -31,6 +31,14 @@ angular
                     }
                 }
             })
+            .state('services', {
+                url: "/services",
+                views: {
+                    '': {
+                        templateUrl: "templates/services.html"
+                    }
+                }
+            })
             .state('contactus', {
                 url: "/contactus",
                 views: {

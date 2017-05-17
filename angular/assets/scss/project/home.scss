@@ -6,7 +6,10 @@
 		left: 50px;
 		z-index: 2;
 		img {
-			width: 200px;
+			width: 125px;
+			@include device('laptop'){
+				width: 200px;
+			}
 		}
 	}
 	.outer-text-container {

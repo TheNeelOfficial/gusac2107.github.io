@@ -2,24 +2,18 @@ angular.module('paradox')
 	.controller('projectsCtrl', ['$rootScope', '$scope', '$http', '$state', '$interval', '$filter', '$timeout', function ($rootScope, $scope, $http, $state, $interval, $filter, $timeout) {
 
 		$scope.categories = [
-			{id:1,name:"Category1",image:"assets/images/1.jpg",description:"Lorem ipsum dolor sit amet, his te vitae maluisset quaerendum, cum et saperet contentiones. No ius meis assentior, sed aeque vidisse cu"},
-			{id:2,name:"Category2",image:"assets/images/1.jpg",description:"Lorem ipsum dolor sit amet, his te vitae maluisset quaerendum, cum et saperet contentiones. No ius meis assentior, sed aeque vidisse cu"},
-			{id:3,name:"Category3",image:"assets/images/1.jpg",description:"Lorem ipsum dolor sit amet, his te vitae maluisset quaerendum, cum et saperet contentiones. No ius meis assentior, sed aeque vidisse cu"}
+			{id:1,name:"Interior Designing",image:"assets/images/interior_design.jpg",description:"Lorem ipsum dolor sit amet, his te vitae maluisset quaerendum, cum et saperet contentiones. No ius meis assentior, sed aeque vidisse cu"},
+			{id:2,name:"Landscape Designing",image:"assets/images/landscape_design.jpg",description:"Lorem ipsum dolor sit amet, his te vitae maluisset quaerendum, cum et saperet contentiones. No ius meis assentior, sed aeque vidisse cu"},
+			{id:3,name:"Product Designing",image:"assets/images/product_design.jpg",description:"Lorem ipsum dolor sit amet, his te vitae maluisset quaerendum, cum et saperet contentiones. No ius meis assentior, sed aeque vidisse cu"}
 		]
 
 		$scope.projects = [
-			{id:1,categoryId:1,name:"Project1",description:"This is a test description for a project. This is a test description for a project. This is a test description for a project. This is to test text panning animation.",thumb:"assets/images/2.jpg", images:["assets/images/1.jpg","assets/images/bg.jpg"]},
-			{id:2,categoryId:1,name:"Project2",description:"This is a test description for a project. This is to test text panning animation.",thumb:"assets/images/1.jpg"},
-			{id:3,categoryId:1,name:"Project3",description:"This is a test description for a project. This is to test text panning animation.",thumb:"assets/images/bg.jpg"},
-			{id:4,categoryId:1,name:"Project4",description:"This is a test description for a project. This is to test text panning animation.",thumb:"assets/images/bg.jpg"},
-			{id:5,categoryId:1,name:"Project5",description:"This is a test description for a project. This is to test text panning animation.",thumb:"assets/images/bg.jpg"},
-			{id:6,categoryId:1,name:"Project6",description:"This is a test description for a project. This is to test text panning animation.",thumb:"assets/images/bg.jpg"},
-			{id:7,categoryId:1,name:"Project7",description:"This is a test description for a project. This is to test text panning animation.",thumb:"assets/images/bg.jpg"},
-			{id:8,categoryId:1,name:"Project8",description:"This is a test description for a project. This is to test text panning animation.",thumb:"assets/images/bg.jpg"},
-			{id:9,categoryId:1,name:"Project9",description:"This is a test description for a project. This is to test text panning animation.",thumb:"assets/images/bg.jpg"},
-			{id:10,categoryId:1,name:"Project10",description:"This is a test description for a project. This is to test text panning animation.",thumb:"assets/images/bg.jpg"},
-			{id:11,categoryId:1,name:"Project11",description:"This is a test description for a project. This is to test text panning animation.",thumb:"assets/images/bg.jpg"},
-			{id:12,categoryId:1,name:"Project12",description:"This is a test description for a project. This is to test text panning animation.",thumb:"assets/images/bg.jpg"},
+			{id:1,categoryId:1,name:"Mr. VASANTHA RAYALU , RESIDENCE",description:"an exquisite penthouse in the city of destiny",thumb:"assets/images/2.jpg", images:["assets/images/1.jpg","assets/images/bg.jpg"]},
+			{id:2,categoryId:1,name:"SUNRAY RESORTS",description:"A PERFECT HOLIDAY DESTINATION MADE ESPECIALLY FOR THE FUN LOVERS",thumb:"assets/images/1.jpg"},
+			{id:3,categoryId:1,name:"Mr. SHIVA KUMAR RESIDENCE",description:"definition of simplicity with a twist",thumb:"assets/images/bg.jpg"},
+			{id:4,categoryId:1,name:"Mr. SHARIEF",description:"when colonial style meets contemporary style",thumb:"assets/images/bg.jpg"},
+			{id:5,categoryId:1,name:"Mr. S.A.N RAJU",description:"Opulent interiors in minimalist architecture",thumb:"assets/images/bg.jpg"},
+			{id:6,categoryId:1,name:"Mr. Kalyan",description:"A white brown and black affair",thumb:"assets/images/bg.jpg"}
 		]	
 
 		$scope.viewAll = true;

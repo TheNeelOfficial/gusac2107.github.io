@@ -2404,16 +2404,24 @@ nav {
       .categories .logo-container .title p {
         color: #333;
         font-weight: bold;
-        font-size: 28px;
+        font-size: 22px;
         line-height: 1.5; }
+        @media (min-width: 992px) {
+          .categories .logo-container .title p {
+            font-size: 28px; } }
       .categories .logo-container .title .tile {
-        height: 100px;
-        width: 125px;
+        height: 84px;
         position: absolute;
-        margin-left: 75px;
+        margin-left: 25px;
+        width: 100px;
         opacity: 0.6;
         border: 0px;
         top: -8px; }
+        @media (min-width: 992px) {
+          .categories .logo-container .title .tile {
+            margin-left: 75px;
+            width: 125px;
+            height: 100px; } }
         .categories .logo-container .title .tile .top-right, .categories .logo-container .title .tile .bottom-left {
           box-sizing: inherit;
           position: absolute;
@@ -2450,58 +2458,66 @@ nav {
           width: 200px; } }
       .categories .logo-container .caption p {
         color: #333;
-        font-size: 24px;
+        font-size: 18px;
         line-height: 1.5; }
+        @media (min-width: 992px) {
+          .categories .logo-container .caption p {
+            font-size: 24px; } }
   .categories .categories-content {
     padding-left: 200px;
-    padding-top: 50px; }
+    position: relative;
+    height: 100vh; }
     @media (min-width: 992px) {
       .categories .categories-content {
         padding-left: 300px; } }
-    .categories .categories-content .categories-block-container {
-      margin-bottom: 60px;
-      padding: 0px 30px; }
-      .categories .categories-content .categories-block-container .categories-block {
-        padding: 15px;
-        cursor: pointer;
-        height: 240px; }
-        .categories .categories-content .categories-block-container .categories-block .img-container {
-          position: relative;
-          height: 170px;
-          margin: -15px -15px 15px -15px;
-          -webkit-transition: height 0.5s;
-          transition: height 0.5s;
-          overflow: hidden; }
-          .categories .categories-content .categories-block-container .categories-block .img-container img {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translateY(-50%) translateX(-50%);
-            transform: translateY(-50%) translateX(-50%);
-            display: block;
-            width: 100%;
-            height: 100%;
-            -webkit-transition: transform 0.5s, -webkit-transform 0.5s;
-            transition: transform 0.5s, -webkit-transform 0.5s; }
-        .categories .categories-content .categories-block-container .categories-block .body-container {
-          height: 40px;
-          -webkit-transition: height 0.5s;
-          transition: height 0.5s;
-          overflow: hidden;
-          color: #333; }
-          .categories .categories-content .categories-block-container .categories-block .body-container .body-title {
-            text-transform: uppercase;
-            line-height: 40px;
-            font-weight: bold; }
-          .categories .categories-content .categories-block-container .categories-block .body-container .body-content {
-            margin-top: 10px; }
-        .categories .categories-content .categories-block-container .categories-block:hover .img-container {
-          height: 40px; }
-          .categories .categories-content .categories-block-container .categories-block:hover .img-container img {
-            -webkit-transform: translateX(-50%) translateY(-50%) scale(3);
-            transform: translateX(-50%) translateY(-50%) scale(3); }
-        .categories .categories-content .categories-block-container .categories-block:hover .body-container {
-          height: 170px; }
+    .categories .categories-content .categories-content-row {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); }
+      .categories .categories-content .categories-content-row .categories-block-container {
+        padding: 0px 30px; }
+        .categories .categories-content .categories-content-row .categories-block-container .categories-block {
+          padding: 15px;
+          cursor: pointer;
+          height: 240px;
+          box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25); }
+          .categories .categories-content .categories-content-row .categories-block-container .categories-block .img-container {
+            position: relative;
+            height: 170px;
+            margin: -15px -15px 15px -15px;
+            -webkit-transition: height 0.5s;
+            transition: height 0.5s;
+            overflow: hidden; }
+            .categories .categories-content .categories-content-row .categories-block-container .categories-block .img-container img {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              -webkit-transform: translateY(-50%) translateX(-50%);
+              transform: translateY(-50%) translateX(-50%);
+              display: block;
+              width: 100%;
+              height: 100%;
+              -webkit-transition: transform 0.5s, -webkit-transform 0.5s;
+              transition: transform 0.5s, -webkit-transform 0.5s; }
+          .categories .categories-content .categories-content-row .categories-block-container .categories-block .body-container {
+            height: 40px;
+            -webkit-transition: height 0.5s;
+            transition: height 0.5s;
+            overflow: hidden;
+            color: #333; }
+            .categories .categories-content .categories-content-row .categories-block-container .categories-block .body-container .body-title {
+              text-transform: uppercase;
+              line-height: 40px;
+              font-weight: bold; }
+            .categories .categories-content .categories-content-row .categories-block-container .categories-block .body-container .body-content {
+              margin-top: 10px; }
+          .categories .categories-content .categories-content-row .categories-block-container .categories-block:hover .img-container {
+            height: 80px; }
+            .categories .categories-content .categories-content-row .categories-block-container .categories-block:hover .img-container img {
+              -webkit-transform: translateX(-50%) translateY(-50%) scale(3);
+              transform: translateX(-50%) translateY(-50%) scale(3); }
+          .categories .categories-content .categories-content-row .categories-block-container .categories-block:hover .body-container {
+            height: 130px; }
 
 @keyframes move-div {
   from {

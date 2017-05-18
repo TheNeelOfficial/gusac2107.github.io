@@ -1,33 +1,31 @@
 <div class="content home">
 	<div class="logo-container">
-		<img src="assets/images/logo.png">
+		<a ui-sref="home"><img src="assets/images/logo.png"></a>
 	</div>
 	<div class="outer-text-container">
 		<div class="text-container">
+			<div class="overlay">
+			</div>
 			<p>what ever good things we build end up building us</p>
 			<!-- <button class="btn">Play Video</button> -->
 		</div>	
 	</div>
-	<div class="slick-container" slick infinite="true" dots="true" arrows="true" slides-to-show="1" slides-to-scroll="1" autoplay="true" autoplay-speed="3000">
+	<div class="slick-container" slick settings="slickConfig">
 		<div class="slick-item">
 			<div class="slick-item-container" ng-style="{'background-image':'url(assets/images/3.jpg)'}">
 			</div>
-			<div class="overlay"></div>
 		</div>
 		<div class="slick-item">
-			<div class="slick-item-container" ng-style="{'background-image':'url(assets/images/7.jpg)'}">
+			<div class="slick-item-container" ng-style="{'background-image':'url(assets/images/IMG_9715.jpg)'}">
 			</div>
-			<div class="overlay"></div>
 		</div>
 		<div class="slick-item">
 			<div class="slick-item-container" ng-style="{'background-image':'url(assets/images/8.jpg)'}">
 			</div>
-			<div class="overlay"></div>
 		</div>
 		<div class="slick-item">
 			<div class="slick-item-container" ng-style="{'background-image':'url(assets/images/9.jpg)'}">
 			</div>
-			<div class="overlay"></div>
 		</div>
 	</div>
 </div>

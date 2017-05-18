@@ -2206,7 +2206,8 @@ nav {
         border-bottom: 1px solid #fff;
         margin-top: 0px;
         height: auto;
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        padding-bottom: 10px; }
         nav.active .enquiry-box .title i {
           margin-right: 15px;
           position: relative;
@@ -2229,7 +2230,11 @@ nav {
     width: 100%;
     margin-bottom: 30px;
     float: left;
-    font-size: 24px; }
+    font-size: 24px;
+    cursor: pointer;
+    font-family: spaceAge;
+    letter-spacing: 10px;
+    color: #f9be05; }
   nav .nav-menu {
     display: none;
     margin-top: 30px;
@@ -2299,12 +2304,27 @@ nav {
       top: 50%;
       transform: translateY(-50%);
       width: 50%;
-      left: 50px;
-      right: 50px; }
+      left: 50px; }
+      .home .outer-text-container .text-container .overlay {
+        background: #333;
+        opacity: 0.5;
+        height: 288px;
+        width: 100%; }
+        @media (min-width: 992px) {
+          .home .outer-text-container .text-container .overlay {
+            height: 216px; } }
+        @media (min-width: 1200px) {
+          .home .outer-text-container .text-container .overlay {
+            height: 144px; } }
       .home .outer-text-container .text-container p {
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        position: absolute;
         font-weight: bold;
         font-size: 48px;
-        margin-bottom: 30px;
+        padding: 15px;
         line-height: 1.2; }
         .home .outer-text-container .text-container p span {
           font-style: italic; }
@@ -2324,14 +2344,6 @@ nav {
         height: 100vh;
         background-size: cover;
         background-repeat: no-repeat; }
-      .home .slick-container .slick-item .overlay {
-        background: #333;
-        opacity: 0.5;
-        position: absolute;
-        top: 0px;
-        bottom: 0px;
-        left: 0px;
-        right: 0px; }
     .home .slick-container .slick-dots {
       position: absolute;
       bottom: 80px;
@@ -2371,40 +2383,125 @@ nav {
       z-index: 2; }
 
 .categories {
-  min-height: 100vh;
-  background: url(images/bg.jpg) center center/cover no-repeat;
-  padding: 15px 15px 50px 15px; }
-  .categories .category-list-container {
-    position: relative; }
-    .categories .category-list-container .category-list {
-      padding: 30px;
-      border: 1px solid #c4c4c4; }
-      .categories .category-list-container .category-list.vertical-middle {
+  min-height: 100vh; }
+  .categories .logo-container {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 2; }
+    .categories .logo-container img {
+      width: 125px; }
+      @media (min-width: 992px) {
+        .categories .logo-container img {
+          width: 200px; } }
+    .categories .logo-container .title {
+      position: relative;
+      margin-top: 90px;
+      width: 125px; }
+      @media (min-width: 992px) {
+        .categories .logo-container .title {
+          width: 200px; } }
+      .categories .logo-container .title p {
+        color: #333;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 1.5; }
+      .categories .logo-container .title .tile {
+        height: 100px;
+        width: 125px;
         position: absolute;
-        top: 50%;
-        left: 0px;
-        right: 0px;
-        transform: translateY(50%); }
-      .categories .category-list-container .category-list .category-container {
-        height: 200px;
-        float: left;
-        padding-bottom: 30px; }
-        .categories .category-list-container .category-list .category-container .category-image {
+        margin-left: 75px;
+        opacity: 0.6;
+        border: 0px;
+        top: -8px; }
+        .categories .logo-container .title .tile .top-right, .categories .logo-container .title .tile .bottom-left {
+          box-sizing: inherit;
+          position: absolute;
+          border: 5px solid transparent;
+          width: 0;
+          height: 0; }
+        .categories .logo-container .title .tile .top-right {
+          top: 0;
+          left: 0; }
+        .categories .logo-container .title .tile .bottom-left {
+          bottom: 0;
+          right: 0; }
+        .categories .logo-container .title .tile.animatetile .top-right,
+        .categories .logo-container .title .tile.animatetile .bottom-left {
           width: 100%;
-          height: 100%;
-          background-size: cover;
-          background-repeat: no-repeat;
-          box-shadow: rgba(0, 0, 0, 0.2) 20px 20px 16px 0px;
+          height: 100%; }
+        .categories .logo-container .title .tile.animatetile .top-right {
+          -webkit-transition: width 0.5s ease-out, height 0.5s ease-out 0.5s;
+          -moz-transition: width 0.5s ease-out, height 0.5s ease-out 0.5s;
+          transition: width 0.5s ease-out, height 0.5s ease-out 0.5s;
+          border-top-color: #ccc;
+          border-right-color: #ccc; }
+        .categories .logo-container .title .tile.animatetile .bottom-left {
+          -webkit-transition: border-color 0s ease-out 1s, width 0.5s ease-out 1s, height 0.5s ease-out 1.5s;
+          -moz-transition: border-color 0s ease-out 1s, width 0.5s ease-out 1s, height 0.5s ease-out 1.5s;
+          transition: border-color 0s ease-out 1s, width 0.5s ease-out 1s, height 0.5s ease-out 1.5s;
+          border-bottom-color: #ccc;
+          border-left-color: #ccc; }
+    .categories .logo-container .caption {
+      margin-top: 60px;
+      width: 125px; }
+      @media (min-width: 992px) {
+        .categories .logo-container .caption {
+          width: 200px; } }
+      .categories .logo-container .caption p {
+        color: #333;
+        font-size: 24px;
+        line-height: 1.5; }
+  .categories .categories-content {
+    padding-left: 200px;
+    padding-top: 50px; }
+    @media (min-width: 992px) {
+      .categories .categories-content {
+        padding-left: 300px; } }
+    .categories .categories-content .categories-block-container {
+      margin-bottom: 60px;
+      padding: 0px 30px; }
+      .categories .categories-content .categories-block-container .categories-block {
+        padding: 15px;
+        cursor: pointer;
+        height: 240px; }
+        .categories .categories-content .categories-block-container .categories-block .img-container {
           position: relative;
-          cursor: pointer; }
-          .categories .category-list-container .category-list .category-container .category-image:hover {
-            border: 2px solid #fff; }
-          .categories .category-list-container .category-list .category-container .category-image .category-name {
+          height: 170px;
+          margin: -15px -15px 15px -15px;
+          -webkit-transition: height 0.5s;
+          transition: height 0.5s;
+          overflow: hidden; }
+          .categories .categories-content .categories-block-container .categories-block .img-container img {
             position: absolute;
-            top: 50px;
-            left: 25px;
-            right: 25px;
-            color: #fff; }
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translateY(-50%) translateX(-50%);
+            transform: translateY(-50%) translateX(-50%);
+            display: block;
+            width: 100%;
+            height: 100%;
+            -webkit-transition: transform 0.5s, -webkit-transform 0.5s;
+            transition: transform 0.5s, -webkit-transform 0.5s; }
+        .categories .categories-content .categories-block-container .categories-block .body-container {
+          height: 40px;
+          -webkit-transition: height 0.5s;
+          transition: height 0.5s;
+          overflow: hidden;
+          color: #333; }
+          .categories .categories-content .categories-block-container .categories-block .body-container .body-title {
+            text-transform: uppercase;
+            line-height: 40px;
+            font-weight: bold; }
+          .categories .categories-content .categories-block-container .categories-block .body-container .body-content {
+            margin-top: 10px; }
+        .categories .categories-content .categories-block-container .categories-block:hover .img-container {
+          height: 40px; }
+          .categories .categories-content .categories-block-container .categories-block:hover .img-container img {
+            -webkit-transform: translateX(-50%) translateY(-50%) scale(3);
+            transform: translateX(-50%) translateY(-50%) scale(3); }
+        .categories .categories-content .categories-block-container .categories-block:hover .body-container {
+          height: 170px; }
 
 @keyframes move-div {
   from {

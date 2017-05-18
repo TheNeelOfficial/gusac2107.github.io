@@ -2,10 +2,9 @@ angular.module('paradox')
 	.controller('projectsCtrl', ['$rootScope', '$scope', '$http', '$state', '$interval', '$filter', '$timeout', function ($rootScope, $scope, $http, $state, $interval, $filter, $timeout) {
 
 		$scope.categories = [
-			{id:1,name:"Category1",image:"assets/images/1.jpg"},
-			{id:2,name:"Category2",image:"assets/images/1.jpg"},
-			{id:3,name:"Category3",image:"assets/images/1.jpg"},
-			{id:4,name:"Category4",image:"assets/images/1.jpg"}
+			{id:1,name:"Category1",image:"assets/images/1.jpg",description:"Lorem ipsum dolor sit amet, his te vitae maluisset quaerendum, cum et saperet contentiones. No ius meis assentior, sed aeque vidisse cu"},
+			{id:2,name:"Category2",image:"assets/images/1.jpg",description:"Lorem ipsum dolor sit amet, his te vitae maluisset quaerendum, cum et saperet contentiones. No ius meis assentior, sed aeque vidisse cu"},
+			{id:3,name:"Category3",image:"assets/images/1.jpg",description:"Lorem ipsum dolor sit amet, his te vitae maluisset quaerendum, cum et saperet contentiones. No ius meis assentior, sed aeque vidisse cu"}
 		]
 
 		$scope.projects = [

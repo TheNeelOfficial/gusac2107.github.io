@@ -5,7 +5,7 @@ angular
         'ngSanitize',
         'ngCookies',
         'ngMap',
-        'slick'
+        'slickCarousel'
     ])
     .config(['$locationProvider', '$stateProvider', '$urlRouterProvider',
         function($locationProvider, $stateProvider, $urlRouterProvider) {

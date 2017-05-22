@@ -48,6 +48,14 @@ angular
                     }
                 }
             })
+            .state('aboutus', {
+                url: "/aboutus",
+                views: {
+                    '': {
+                        templateUrl: "templates/aboutus.html"
+                    }
+                }
+            })
         }
     ])
 
@@ -56,11 +64,20 @@ angular
             
             $rootScope.menuActive = false;
             $rootScope.toggleMenu = function(){
+                if(!$rootScope.menuActive){
+                    $("#bodyOverlay").show();
+                    $("body").css("overflow","hidden");
+                } else {
+                    $("#bodyOverlay").hide();
+                    $("body").css("overflow","auto");
+                }
                 $rootScope.menuActive = !$rootScope.menuActive;
             }
 
             $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {   
-                
+                $rootScope.menuActive = false;
+                $("#bodyOverlay").hide();
+                $("body").css("overflow","auto");
             });
 
             $rootScope.scrollTo = function(id){

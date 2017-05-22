@@ -1,5 +1,7 @@
-.services {
+.aboutus {
 	min-height: 100vh;
+	color: $black;
+	line-height: 1.2;
 	.logo-container {
 		position:absolute;
 		top: 50px;
@@ -93,84 +95,50 @@
 			  	}
 			}
 		}
-		.caption {
-			margin-top: 60px;
-			width: 125px;
-			@include device('laptop'){
-				width: 200px;
-			}
-			p {
-				color: $black;
-			    font-size: 24px;
-			    line-height: 1.5;
-			}
-		}
 	}
-	.services-content {
+	.aboutus-content {
 		padding-right: 50px;
 		padding-left: 200px;
 		padding-top: 50px;
+		padding-bottom: 50px;
 		@include device('laptop'){
 			padding-left: 300px;
 		}
-		.service-block-container {
+		.top-row {
 			margin-bottom: 60px;
-			padding: 0px 30px;
-			height: 250px;
-			.service-block {
-				padding: 0px 15px;
-				cursor: pointer;
-				.img-container {
-					position: relative;
-				    height: 150px;
-				    padding: 15px;
-					img {
-						width: 100%;
-						height: 100%;
-					}
+			.body-container {
+				.title {
+					font-weight: bold;
+				    font-size: 22px;
+				    margin-bottom: 30px;
 				}
-				.body-container {
-					padding: 15px 0px;
-    				text-align: center;
-				   	.body-title {
-				   		color: $black;
-				   		text-transform: uppercase;
-					    line-height: 20px;
-					    font-weight: bold;
-				   	}
+				.body {
+
 				}
-				&:hover {
-					background: $black;
-					.img-container {
-					}
-					.body-container {
-						.body-title {
-				   			color: #fff;
-				   		}
-					}
+			}
+			.img-container {
+				img {
+					width: 100%;
+					height: 300px;
 				}
 			}
 		}
-	}
-	.services-footer-content {
-		padding: 50px;
-		h1 {
-			color: $black;
-		    text-align: center;
-		    margin-bottom: 30px;
-		    font-weight: bold;
-		    font-size: 22px;
-		}
-		.services-footer-block {
-			height: 250px;
-			padding: 0px 30px;
-			margin-bottom: 30px;
-			@include device('tablet'){
-				margin-bottom: 0px;
+		.bottom-row {
+			.body-container {
+				.title {
+					font-weight: bold;
+				    font-size: 22px;
+				    margin-bottom: 30px;
+				}
+				.body {
+
+				}
 			}
-			img {
-				width: 100%;
-				height: 100%;
+			.img-container {
+				img {
+					width: 100%;
+					height: 300px;
+				}
 			}
 		}
 	}

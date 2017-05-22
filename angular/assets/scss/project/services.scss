@@ -21,7 +21,7 @@
 			p {
 				color: $black;
 			    font-weight: bold;
-			    font-size: 22px;
+			    font-size: 18px;
 			    @include device('laptop'){ 
 			    	font-size: 28px;
 			    }
@@ -39,7 +39,7 @@
 				}
 			  	opacity: 0.6;
 			  	border: 0px;
-			  	top: -8px;
+			  	top: -14px;
 			  	.top-right, .bottom-left {
 			      	box-sizing: inherit;
 			      	position: absolute;
@@ -110,6 +110,7 @@
 		padding-right: 50px;
 		padding-left: 200px;
 		padding-top: 50px;
+		padding-bottom: 50px;
 		@include device('laptop'){
 			padding-left: 300px;
 		}
@@ -130,7 +131,7 @@
 					}
 				}
 				.body-container {
-					padding: 15px 0px;
+					padding: 15px;
     				text-align: center;
 				   	.body-title {
 				   		color: $black;
@@ -163,8 +164,7 @@
 		    font-size: 22px;
 		}
 		.services-footer-block {
-			height: 250px;
-			padding: 0px 30px;
+			padding: 0px 15px;
 			margin-bottom: 30px;
 			@include device('tablet'){
 				margin-bottom: 0px;
@@ -178,7 +178,7 @@
 			}
 			img {
 				width: 100%;
-				height: 100%;
+				height: 250px;
 			}
 		}
 	}

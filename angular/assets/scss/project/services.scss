@@ -114,12 +114,12 @@
 			padding-left: 300px;
 		}
 		.service-block-container {
-			margin-bottom: 60px;
-			padding: 0px 30px;
-			height: 250px;
+			padding: 0px;
 			.service-block {
-				padding: 0px 15px;
 				cursor: pointer;
+			    height: 220px;
+				background: #ededed;
+				border: 1px solid #cccccc;
 				.img-container {
 					position: relative;
 				    height: 150px;
@@ -141,6 +141,7 @@
 				}
 				&:hover {
 					background: $black;
+					border: 0px;
 					.img-container {
 					}
 					.body-container {
@@ -167,6 +168,13 @@
 			margin-bottom: 30px;
 			@include device('tablet'){
 				margin-bottom: 0px;
+			}
+			p {
+			    color: $black;
+			    margin-bottom: 30px;
+			    text-align: center;
+			    font-size: 18px;
+			    font-weight: bold;
 			}
 			img {
 				width: 100%;

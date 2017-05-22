@@ -2913,12 +2913,12 @@ nav {
       .services .services-content {
         padding-left: 300px; } }
     .services .services-content .service-block-container {
-      margin-bottom: 60px;
-      padding: 0px 30px;
-      height: 250px; }
+      padding: 0px; }
       .services .services-content .service-block-container .service-block {
-        padding: 0px 15px;
-        cursor: pointer; }
+        cursor: pointer;
+        height: 220px;
+        background: #ededed;
+        border: 1px solid #cccccc; }
         .services .services-content .service-block-container .service-block .img-container {
           position: relative;
           height: 150px;
@@ -2935,7 +2935,8 @@ nav {
             line-height: 20px;
             font-weight: bold; }
         .services .services-content .service-block-container .service-block:hover {
-          background: #333; }
+          background: #333;
+          border: 0px; }
           .services .services-content .service-block-container .service-block:hover .body-container .body-title {
             color: #fff; }
   .services .services-footer-content {
@@ -2953,6 +2954,12 @@ nav {
       @media (min-width: 768px) {
         .services .services-footer-content .services-footer-block {
           margin-bottom: 0px; } }
+      .services .services-footer-content .services-footer-block p {
+        color: #333;
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold; }
       .services .services-footer-content .services-footer-block img {
         width: 100%;
         height: 100%; }

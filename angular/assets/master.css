@@ -2756,11 +2756,11 @@ nav {
   min-height: 100vh;
   color: #333; }
   .contactus .main-container {
-    padding-top: 80px;
-    padding-bottom: 40px; }
+    padding-top: 50px;
+    padding-bottom: 25px; }
     @media (min-width: 768px) {
       .contactus .main-container {
-        height: 75vh; } }
+        height: 70vh; } }
     .contactus .main-container .heading-container h2 {
       font-size: 28px;
       font-weight: bold;
@@ -2774,6 +2774,8 @@ nav {
       line-height: 1.5; }
       .contactus .main-container .info-container h2 {
         font-weight: bold; }
+      .contactus .main-container .info-container .slick-slide:focus {
+        outline: none; }
     .contactus .main-container .form-container {
       margin-top: 30px; }
       @media (min-width: 768px) {
@@ -2822,9 +2824,9 @@ nav {
             box-shadow: none;
             outline: none; }
   .contactus .map-container {
-    height: 25vh; }
+    height: 30vh; }
     .contactus .map-container #map {
-      height: 25vh; }
+      height: 30vh; }
 
 .services {
   min-height: 100vh; }

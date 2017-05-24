@@ -10,10 +10,10 @@
 	//background: url(images/bg.jpg) center center / cover no-repeat;
 	color: $black;
 	.main-container {
-		padding-top: 80px;
-		padding-bottom: 40px;
+		padding-top: 50px;
+		padding-bottom: 25px;
 		@include device('tablet'){
-			height: 75vh;
+			height: 70vh;
 		}
 		.heading-container {
 			h2 {
@@ -32,6 +32,11 @@
 			line-height: 1.5;
 			h2 {
 				font-weight: bold;
+			}
+			.slick-slide {
+				&:focus {
+					outline: none;
+				}
 			}
 		}
 		.form-container {
@@ -86,9 +91,9 @@
 		}
 	}
 	.map-container {
-		height: 25vh;
+		height: 30vh;
 		#map {
-			height: 25vh;
+			height: 30vh;
 		}
 	}
 }

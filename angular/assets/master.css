@@ -2300,7 +2300,6 @@ nav {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(235, 235, 235, 0.75);
   z-index: 5;
   animation: opac 1.5s; }
 
@@ -2755,7 +2754,7 @@ nav {
 
 .contactus {
   min-height: 100vh;
-  background: url(images/bg.jpg) center center/cover no-repeat; }
+  color: #333; }
   .contactus .main-container {
     padding-top: 80px;
     padding-bottom: 40px; }

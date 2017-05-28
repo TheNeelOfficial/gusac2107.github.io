@@ -1,3 +1,6 @@
+body{
+	font-family: MaisonNeue-Book;
+}
 .aboutus {
 	min-height: 100vh;
 	color: $black;
@@ -13,7 +16,14 @@
 				width: 200px;
 			}
 		}
+		p{
+			font-family: spaceAge;
+			padding-left:20px;
+			font-size: 40px;
+			color: #FCBF00;
+		}
 		.title {
+
 			position: relative;
 			margin-top: 90px;
 			width: 125px;
@@ -21,14 +31,17 @@
 				width: 200px;
 			}
 			p {
-				color: $black;
+					color: $black;
 			    font-weight: bold;
+					font-family: MaisonNeue-Book;
 			    font-size: 22px;
-			    @include device('laptop'){ 
-			    	font-size: 28px;
+			    @include device('laptop'){
+			    font-size: 28px;
 			    }
 			    line-height: 1.5;
+
 			}
+
 			.tile {
 			  	height: 84px;
 			  	position: absolute;
@@ -36,8 +49,8 @@
 			  	width: 100px;
 			  	@include device('laptop'){
 					margin-left: 75px;
-			  		width: 125px;
-			  		height: 100px;
+			  	width: 125px;
+			  	height: 100px;
 				}
 			  	opacity: 0.6;
 			  	border: 0px;
@@ -57,6 +70,7 @@
 			    	bottom: 0;
 			    	right: 0;
 			  	}
+
 			  	&.animatetile {
 			    	.top-right,
 			    	.bottom-left {
@@ -112,9 +126,6 @@
 				    font-size: 22px;
 				    margin-bottom: 30px;
 				}
-				.body {
-
-				}
 			}
 			.img-container {
 				img {
@@ -126,12 +137,12 @@
 		.bottom-row {
 			.body-container {
 				.title {
-					font-weight: bold;
+						font-weight: bold;
 				    font-size: 22px;
 				    margin-bottom: 30px;
 				}
 				.body {
-
+					font-weight: light;
 				}
 			}
 			.img-container {

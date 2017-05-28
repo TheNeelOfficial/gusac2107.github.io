@@ -31,14 +31,14 @@ angular
                     }
                 }
             })
-            // .state('services', {
-            //     url: "/services",
-            //     views: {
-            //         '': {
-            //             templateUrl: "templates/services.html"
-            //         }
-            //     }
-            // })
+            .state('services', {
+                 url: "/services",
+                 views: {
+                     '': {
+                         templateUrl: "templates/services.html"
+                     }
+                 }
+             })
             .state('contactus', {
                 url: "/contactus",
                 views: {
@@ -61,7 +61,7 @@ angular
 
     .run(['$rootScope', '$timeout', '$state', '$window', '$cookies', '$timeout',
         function($rootScope, $timeout, $state, $window, $cookies, $timeout){
-            
+
             $rootScope.menuActive = false;
             $rootScope.toggleMenu = function(){
                 if(!$rootScope.menuActive){
@@ -74,7 +74,7 @@ angular
                 $rootScope.menuActive = !$rootScope.menuActive;
             }
 
-            $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {   
+            $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
                 $rootScope.menuActive = false;
                 $("#bodyOverlay").hide();
                 $("body").css("overflow","auto");
@@ -87,5 +87,5 @@ angular
             }
 
         }
-        
+
     ]);

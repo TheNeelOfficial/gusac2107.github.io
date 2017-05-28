@@ -2170,6 +2170,50 @@ stretchRight
   font-family: spaceAge;
   src: url("fonts/space age.ttf"); }
 
+@font-face {
+  font-family: MaisonNeue-Book;
+  src: url("fonts/MaisonNeue-Book.ttf"); }
+
+@font-face {
+  font-family: MaisonNeue-BookItalic;
+  src: url("fonts/MaisonNeue-BookItalic.ttf"); }
+
+@font-face {
+  font-family: MaisonNeue-Demi;
+  src: url("fonts/MaisonNeue-Demi.ttf"); }
+
+@font-face {
+  font-family: MaisonNeue-DemiItalic;
+  src: url("fonts/MaisonNeue-DemiItalic.ttf"); }
+
+@font-face {
+  font-family: MaisonNeue-Light;
+  src: url("fonts/MaisonNeue-Light.ttf"); }
+
+@font-face {
+  font-family: MaisonNeue-LightItalic;
+  src: url("fonts/MaisonNeue-LightItalic.ttf"); }
+
+@font-face {
+  font-family: MaisonNeue-Medium;
+  src: url("fonts/MaisonNeue-Medium.ttf"); }
+
+@font-face {
+  font-family: MaisonNeue-MediumItalic;
+  src: url("fonts/MaisonNeue-MediumItalic.ttf"); }
+
+@font-face {
+  font-family: MaisonNeue-MediumItalic;
+  src: url("fonts/MaisonNeue-MediumItalic.ttf"); }
+
+@font-face {
+  font-family: MaisonNeue-Mono;
+  src: url("fonts/MaisonNeue-Mono.ttf"); }
+
+@font-face {
+  font-family: MaisonNeue-MonoItalic;
+  src: url("fonts/MaisonNeue-MonoItalic.ttf"); }
+
 nav {
   position: fixed;
   top: 0px;
@@ -2303,6 +2347,9 @@ nav {
   z-index: 5;
   animation: opac 1.5s; }
 
+body {
+  font-family: MaisonNeue-Book; }
+
 .home {
   height: 100vh; }
   .home .logo-container {
@@ -2315,6 +2362,11 @@ nav {
       @media (min-width: 992px) {
         .home .logo-container img {
           width: 200px; } }
+    .home .logo-container p {
+      font-family: spaceAge;
+      padding-left: 20px;
+      font-size: 40px;
+      color: #FCBF00; }
   .home .outer-text-container {
     position: absolute;
     height: 100%;
@@ -2325,9 +2377,9 @@ nav {
       top: 50%;
       transform: translateY(-50%);
       width: 50%;
-      left: 50px; }
+      left: 50px;
+      font-family: MaisonNeue-Book; }
       .home .outer-text-container .text-container .overlay {
-        background: #333;
         opacity: 0.5;
         height: 288px;
         width: 100%; }
@@ -2344,9 +2396,9 @@ nav {
         right: 0px;
         position: absolute;
         font-weight: bold;
-        font-size: 48px;
+        font-size: 36px;
         padding: 15px;
-        line-height: 1.2; }
+        line-height: 1.5; }
         .home .outer-text-container .text-container p span {
           font-style: italic; }
       .home .outer-text-container .text-container button {
@@ -2415,6 +2467,11 @@ nav {
       @media (min-width: 992px) {
         .categories .logo-container img {
           width: 200px; } }
+    .categories .logo-container p {
+      font-family: spaceAge;
+      padding-left: 20px;
+      font-size: 40px;
+      color: #FCBF00; }
     .categories .logo-container .title {
       position: relative;
       margin-top: 90px;
@@ -2425,6 +2482,7 @@ nav {
       .categories .logo-container .title p {
         color: #333;
         font-weight: bold;
+        font-family: MaisonNeue-Book;
         font-size: 22px;
         line-height: 1.5; }
         @media (min-width: 992px) {
@@ -2840,6 +2898,11 @@ nav {
       @media (min-width: 992px) {
         .services .logo-container img {
           width: 200px; } }
+    .services .logo-container p {
+      font-family: spaceAge;
+      padding-left: 20px;
+      font-size: 40px;
+      color: #FCBF00; }
     .services .logo-container .title {
       position: relative;
       margin-top: 90px;
@@ -2850,7 +2913,8 @@ nav {
       .services .logo-container .title p {
         color: #333;
         font-weight: bold;
-        font-size: 18px;
+        font-family: MaisonNeue-Book;
+        font-size: 22px;
         line-height: 1.5; }
         @media (min-width: 992px) {
           .services .logo-container .title p {
@@ -2904,6 +2968,7 @@ nav {
           width: 200px; } }
       .services .logo-container .caption p {
         color: #333;
+        font-family: MaisonNeue-Book;
         font-size: 24px;
         line-height: 1.5; }
   .services .services-content {
@@ -3066,6 +3131,9 @@ nav {
       width: 100%;
       height: 250px; }
 
+body {
+  font-family: MaisonNeue-Book; }
+
 .aboutus {
   min-height: 100vh;
   color: #333;
@@ -3080,6 +3148,11 @@ nav {
       @media (min-width: 992px) {
         .aboutus .logo-container img {
           width: 200px; } }
+    .aboutus .logo-container p {
+      font-family: spaceAge;
+      padding-left: 20px;
+      font-size: 40px;
+      color: #FCBF00; }
     .aboutus .logo-container .title {
       position: relative;
       margin-top: 90px;
@@ -3090,6 +3163,7 @@ nav {
       .aboutus .logo-container .title p {
         color: #333;
         font-weight: bold;
+        font-family: MaisonNeue-Book;
         font-size: 22px;
         line-height: 1.5; }
         @media (min-width: 992px) {
@@ -3157,6 +3231,8 @@ nav {
       font-weight: bold;
       font-size: 22px;
       margin-bottom: 30px; }
+    .aboutus .aboutus-content .bottom-row .body-container .body {
+      font-weight: light; }
     .aboutus .aboutus-content .bottom-row .img-container img {
       width: 100%;
       height: 300px; }
